@@ -21,12 +21,16 @@ if (!is_null($events['events'])) {
 			//find the intent
 			
 			$replyText = "";
-			switch($text){
-				case strpos($text, 'rsi') :
-					$replyText = "user want RSI intent.";
-					break;
-				default:
-					$replyText = "user want others intent.";
+			// switch($text){
+			// 	case !strpos($text, 'rsi') :
+			// 		$replyText = "user want RSI intent.";
+			// 		break;
+			// 	default:
+			// 		$replyText = "user want others intent.";
+			// }
+
+			if !strpos($text, 'rsi'){
+				$replyText = "user want RSI intent.";
 			}
 
 			$messages = [
