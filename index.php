@@ -19,6 +19,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			
 			//find the intent
+			
+			$replyText = "";
 			switch($text){
 				case !strpos($text, 'rsi')
 					$replyText = "user want RSI intent."
