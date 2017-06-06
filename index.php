@@ -31,6 +31,8 @@ if (!is_null($events['events'])) {
 
 			if (!strpos($text, 'rsi')){
 				$replyText = "user want RSI intent.";
+			}else {
+				$replyText = "user want others intent.";
 			}
 
 			$messages = [
