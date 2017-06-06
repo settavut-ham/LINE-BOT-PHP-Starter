@@ -30,8 +30,8 @@ if (!is_null($events['events'])) {
 			// }
 
 			if (!strpos($text, 'rsi')){
-				$replyText = "user want RSI intent.";
-				echo "ris word detect";
+				$replyText = "user want RSI intenst.";
+
 			}else {
 				$replyText = "user want others intent.";
 			}
