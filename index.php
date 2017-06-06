@@ -29,8 +29,8 @@ if (!is_null($events['events'])) {
 			// 		$replyText = "user want others intent.";
 			// }
 
-			if (!strpos($text, 'rsi')){
-				$replyText = "user want RSI intenst.";
+			if (strpos($text, 'ris') !== false){
+				$replyText = "user want RSI intent.";
 
 			}else {
 				$replyText = "user want others intent.";
