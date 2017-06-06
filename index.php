@@ -22,9 +22,10 @@ if (!is_null($events['events'])) {
 			
 			$replyText = "";
 			switch($text){
-				case !strpos($text, 'rsi')
+				case !strpos($text, 'rsi') :
 					$replyText = "user want RSI intent."
-
+				default:
+					$replyText = "user want others intent."
 			}
 
 			$messages = [
